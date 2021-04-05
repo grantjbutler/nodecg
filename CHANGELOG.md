@@ -2,6 +2,103 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.1](https://github.com/nodecg/nodecg/compare/v1.8.0...v1.8.1) (2021-03-10)
+
+
+### Bug Fixes
+
+* better log formatting and configurable timestamps ([#575](https://github.com/nodecg/nodecg/issues/575)) ([dd323cd](https://github.com/nodecg/nodecg/commit/dd323cd72dc38343d35a374158e5e1bfde70ddfd))
+* **deps:** fix some vulnerabilities of dependency ([81c9ee2](https://github.com/nodecg/nodecg/commit/81c9ee2edb296e5bef5b8d5df7e0c9ddc9279d5b))
+
+## [1.8.0](https://github.com/nodecg/nodecg/compare/v1.7.4...v1.8.0) (2021-03-08)
+
+
+### Features
+
+* **replicants:** remove local storage size quota ([#574](https://github.com/nodecg/nodecg/issues/574)) ([10bfd6f](https://github.com/nodecg/nodecg/commit/10bfd6ff87107fde16459140792cbc590f8497a0))
+
+
+### Bug Fixes
+
+* **types:** add persistenceInterval option ([#572](https://github.com/nodecg/nodecg/issues/572)) ([84c3c46](https://github.com/nodecg/nodecg/commit/84c3c463c1ee27fe8cc2e0e3fc8177cdccc91e14))
+
+### [1.7.4](https://github.com/nodecg/nodecg/compare/v1.7.3...v1.7.4) (2020-12-11)
+
+
+### Bug Fixes
+
+* remove node warnings ([#567](https://github.com/nodecg/nodecg/issues/567)) ([5d5c494](https://github.com/nodecg/nodecg/commit/5d5c494))
+
+
+
+### [1.7.3](https://github.com/nodecg/nodecg/compare/v1.7.2...v1.7.3) (2020-12-11)
+
+
+### Bug Fixes
+
+* **deps:** update express-bare-module-specifiers ([bd1d925](https://github.com/nodecg/nodecg/commit/bd1d925))
+
+
+
+### [1.7.2](https://github.com/nodecg/nodecg/compare/v1.7.1...v1.7.2) (2020-11-20)
+
+
+### Bug Fixes
+
+* **deps:** switch json-schema-lib repo ([7b7c7c1](https://github.com/nodecg/nodecg/commit/7b7c7c1))
+
+
+
+### [1.7.1](https://github.com/nodecg/nodecg/compare/v1.7.0...v1.7.1) (2020-10-02)
+
+
+### Bug Fixes
+
+* **assets:** filename ([#564](https://github.com/nodecg/nodecg/issues/564)) ([ddf936c](https://github.com/nodecg/nodecg/commit/ddf936c))
+
+
+
+## [1.7.0](https://github.com/nodecg/nodecg/compare/v1.6.1...v1.7.0) (2020-09-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies through npm audit ([a871f4b](https://github.com/nodecg/nodecg/commit/a871f4b))
+
+
+### Features
+
+* **dashboard:** Add graphic obs drag parameters ([#561](https://github.com/nodecg/nodecg/issues/561)) ([5c5a833](https://github.com/nodecg/nodecg/commit/5c5a833))
+
+
+
+### [1.6.1](https://github.com/nodecg/nodecg/compare/v1.6.0...v1.6.1) (2020-04-30)
+
+
+### Bug Fixes
+
+* **auth:** send Client-ID header on all Twitch API requests ([#550](https://github.com/nodecg/nodecg/issues/550)) ([12d2a5e](https://github.com/nodecg/nodecg/commit/12d2a5e))
+
+
+
+## [1.6.0](https://github.com/nodecg/nodecg/compare/v1.5.0...v1.6.0) (2020-02-24)
+
+
+### Bug Fixes
+
+* **bundle-parser:** check version when parsing ([#510](https://github.com/nodecg/nodecg/issues/510)) ([484d839](https://github.com/nodecg/nodecg/commit/484d839))
+* **replicants:** clone default value ([#527](https://github.com/nodecg/nodecg/issues/527)) ([5ed1ed5](https://github.com/nodecg/nodecg/commit/5ed1ed5))
+
+
+### Features
+
+* **deps:** update chokidar to v3 ([#515](https://github.com/nodecg/nodecg/issues/515)) ([f468825](https://github.com/nodecg/nodecg/commit/f468825))
+* **docker:** bump node to 10 ([#533](https://github.com/nodecg/nodecg/issues/533)) ([6fafeea](https://github.com/nodecg/nodecg/commit/6fafeea))
+* **extension:** add router helper ([#535](https://github.com/nodecg/nodecg/issues/535)) ([2a69423](https://github.com/nodecg/nodecg/commit/2a69423))
+* **extension:** flexible mount ([#519](https://github.com/nodecg/nodecg/issues/519)) ([3ff1603](https://github.com/nodecg/nodecg/commit/3ff1603))
+
+
+
 ## [1.5.0](https://github.com/nodecg/nodecg/compare/v1.4.1...v1.5.0) (2019-08-06)
 
 
@@ -406,7 +503,7 @@ nodecg.listenFor('example', (data, ack) => {
 * **dashboard:** add "open in standalone window" button to panel headers ([ba077c0](https://github.com/nodecg/nodecg/commit/ba077c0))
 * **dashboard:** add default body background color style to panels ([3433529](https://github.com/nodecg/nodecg/commit/3433529))
 * **dashboard:** add support for "fullbleed" workspaces, which have one single panel that takes up the entire dashboard
-* **dashboard:** add support for multiple tabs of panels, called "workspaces". See the [Manifest tutorial](http://nodecg.com/tutorial-manifest.html) (specifically the `nodecg.dashboardPanels` section) for more info.
+* **dashboard:** add support for multiple tabs of panels, called "workspaces". See the [Manifest tutorial](https://nodecg.dev/tutorial-manifest.html) (specifically the `nodecg.dashboardPanels` section) for more info.
 * **dashboard:** compatability with browsers other than Chrome has been greatly improved
 * **dashboard:** re-design dashboard with tabbed navigation ([8214b43](https://github.com/nodecg/nodecg/commit/8214b43))
 * **dashboard:** show a much shorter and easier to read URL for each graphic on the Graphics page ([5b91af1](https://github.com/nodecg/nodecg/commit/5b91af1))
@@ -426,7 +523,7 @@ nodecg.listenFor('example', (data, ack) => {
 
 ### BREAKING CHANGES
 
-For detailed instructions on how to migrate your v0.8 bundles to v0.9, [check out the tutorial on NodeCG.com](http://nodecg.com/tutorial-migrating-0.8-to-0.9.html)
+For detailed instructions on how to migrate your v0.8 bundles to v0.9, [check out the tutorial on NodeCG.dev](https://nodecg.dev/tutorial-migrating-0.8-to-0.9.html)
 
 * NodeCG no longer automatically installs the `npm` and `bower` dependencies of installed bundles. Users must do this manually.
 * replicants: Replicants now set their state to `declared` *before* they emit their post-declare `change` event. This is unlikely to break any existing code, but it is technically a breaking change.
